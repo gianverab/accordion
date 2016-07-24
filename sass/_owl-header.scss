@@ -1,0 +1,126 @@
+#owl-header{
+	background: url("../img/slide-1.jpg") center center no-repeat;
+
+	height: 503px;
+	margin: auto;
+	
+}
+#owl-header .owl-item .item-big {
+
+height: 503px;
+}
+#owl-header .owl-item .item-big h4,#owl-header .owl-item .item-big h5,#owl-header .owl-item .item-big h6,#owl-header .owl-item .item-big a{
+	display:none;
+	font-family: "Gotham Book", sans-serif;
+	text-align:left;
+	color:#fff;
+}
+#owl-header .item-big div{
+	width:582px;
+	float:right;
+	padding-top:53px;
+	padding-right:42px;
+}
+#owl-header h4{
+	font-size: 24px;
+	font-weight: normal;
+	text-transform:none;
+	margin:5px 0;
+}
+#owl-header h5{
+	font-size: 50px;
+	font-weight: 700;
+	text-transform:none;
+	margin:5px 0;
+}
+
+#owl-header a{
+	background-color:#025270;
+	padding:0 5px;
+	line-height:30px;
+	height:30px;
+	margin-top:12px;
+	float:left;
+}
+@media(min-width:1200px) {
+	#owl-header .item1 a{
+	margin-top:83px;
+	}
+	#owl-header .item2 a{
+	margin-top:30px;
+	}
+}
+#owl-header .owl-pagination {
+	margin-top:-30px;
+}
+#owl-header .owl-controls .owl-page{
+
+	color:#fff;
+}
+#owl-header .owl-controls .owl-page.active{
+	color:#025270;
+	
+}
+.portfolio-item img{
+	width:100%;
+}
+#owl-header-mobile{
+	background: url("../img/slide-1.jpg") center center no-repeat;
+	margin: auto;
+	height:301px;
+	width: 100%;
+}
+
+#owl-header-mobile .owl-item .item-mobile {
+
+
+	height:301px;
+}
+#owl-header-mobile .item-mobile div{
+	width:100%;
+	float:left;
+	position: absolute;
+	bottom: 0;
+}
+#owl-header-mobile .owl-item .item-mobile h4,#owl-header-mobile .owl-item .item-mobile h5,#owl-header-mobile .owl-item .item-mobile a{
+
+	font-family: "Gotham Book", sans-serif;
+	text-align:left;
+	color:#fff;
+}/*
+#owl-header-mobile .item1 h4{
+margin-top: 201px;
+}
+#owl-header-mobile .item2 h4{
+margin-top: 163px;
+}
+#owl-header-mobile .item3 h4{
+margin-top: 182px;
+}
+#owl-header-mobile .item4 h4{
+margin-top: 182px;
+}*/
+#owl-header-mobile h4{
+	font-size: 18px;
+	font-weight: normal;
+	text-transform:none;
+	margin:5px 0;
+	padding:0 13px;
+}
+#owl-header-mobile h5{
+	font-size: 18px;
+	font-weight: 700;
+	text-transform:none;
+	margin:5px 0;
+	padding:0 13px;
+}
+#owl-header-mobile a{
+	font-size: 14px;
+	background-color:#025270;
+	padding:4px 5px 5px 13px;
+	line-height:16px;
+	height:40px;
+	margin-top:12px;
+	float:left;
+	width:100%;
+}

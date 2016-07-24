@@ -1,0 +1,364 @@
+/* Carousel
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  min-height: 70vh;
+  margin-bottom: 0;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 2;
+  top: 25%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  min-height: 70vh;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+}
+
+.carousel-caption h1 {
+  margin-bottom: 0;
+}
+
+.carousel-caption p {
+  margin-top: -5px;
+}
+
+.carousel-caption a {
+  background-color: #FFF;
+  color: #0875b8;
+  font-weight: 600;
+  border-radius: 0;
+  margin-top: 3%;
+}
+
+.carousel-caption a:hover {
+  background-color: #0875b8;
+  color: #FFF;
+  border: 2px solid #FFF;
+}
+
+.uno .carousel-indicators {
+  display: block;
+  margin: auto;
+  top: -20vh;
+  margin-bottom: 5vh;
+  left: 0;
+  position: relative;
+  height: 20px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+.arrow img {
+  max-width: 26px;
+  display: block;
+  margin: auto;
+  top: -20vh;
+  position: relative;
+  z-index: 3;
+}
+/*---------- EXPERIENCIA ----------*/
+.carousel.dos {
+  width: 82%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  overflow: hidden;
+  height: 250px;
+  min-height: 25vh;
+  padding: 0 50px;
+}
+.carousel.dos .item{
+  font-weight: 300;
+  height: 180px;
+  background-size: cover;
+}
+.carousel.dos h3 {
+  font-weight: 300;
+  color: #636363;
+  margin: 0 30px;
+  margin-top: -24px;
+  text-transform: none;
+  text-shadow: none;
+  font-size: 18px;
+  line-height: 1.2;
+  max-width: 580px;
+}
+
+.dos .carousel-control.right, .dos .carousel-control.left {
+  color: #0875b8;
+  text-shadow: none;
+  //width:20%;
+}
+.carousel.dos .carousel-caption {
+  padding-top: 0;
+  top: 15%;
+  width: 92%;
+  left: 4%;
+}
+.carousel.dos .carousel-inner {
+  overflow: hidden;
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.dos .carousel-indicators, .clientes .carousel-indicators {
+  bottom: -30px;
+}
+
+.dos .carousel-indicators li, .clientes .carousel-indicators li {
+  border: 2px solid #0875b8;
+}
+
+.dos .carousel-indicators .active, .clientes .carousel-indicators .active {
+  background-color: #0875b8;
+}
+.dos .flecha{
+  width: 68px;
+  height: 134px;
+  display: block;
+  margin-top: 4vh;
+}
+.dos .flecha.izq {
+  background: url("../img/flecha_izquierda.png") no-repeat;
+  background-position: left center;
+}
+
+.dos .flecha.der {
+  background: url("../img/flecha_derecha.png") no-repeat;
+  background-position: right center; 
+  float: right;
+}
+.dos .number {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 28px;
+  color: #fe6a3b;
+  border: 1px solid #fe6a3b;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding-top: 2px;
+}
+/*---------- CLIENTES ----------*/
+.carousel.clientes {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow: hidden;
+  min-height: 25vh;
+  font-size: 20px;
+  height: 680px;
+}
+.carousel.clientes h4 {
+  font-weight: bold;
+  color: #636363;
+  margin: 20px auto 32px auto;
+  text-transform: none;
+  text-shadow: none;
+  font-size: 17px;
+  line-height: 1.2;
+}
+.carousel.clientes p {
+  font-weight: 300;
+  color: #636363;
+  margin: 20px auto;
+  text-transform: none;
+  text-shadow: none;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.carousel.clientes ul {
+  font-weight: 300;
+  color: #636363;
+  margin: 20px auto;
+  text-transform: none;
+  text-shadow: none;
+  font-size: 16px;
+  line-height: 1.2;
+  list-style: none;
+}
+.carousel.clientes li{
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+}
+.carousel.clientes li:before{
+  content: '';
+  position: absolute;
+  left:0px;
+  top: 13px;
+  width: 2px;
+  height: 2px;
+  background-color: #636363;
+  border-radius: 50%;
+}
+.carousel.clientes li:first-child{
+  &:before{
+    left: 0px;
+  }
+}
+.carousel.clientes li:last-child{
+  margin-bottom: 0;
+  &:before{
+    left: -4px;
+  }
+}
+.carousel.clientes .carousel-caption {
+  z-index: 2;
+  top: 222px;
+  width: 94%;
+  left: 3%;
+}
+.clientes .carousel-inner {
+  overflow: hidden;
+  width: 88%;
+  margin-left: 6%;
+  margin-right: 6%;
+  padding-bottom: 150px;
+}
+.carousel.clientes .carousel-inner{
+  background: url(../img/arrow_base.png) no-repeat;
+  background-position: center 189px;
+  background-size: 664px;
+}
+.clientes .carousel-caption {
+  padding-top: 0;
+  top: 15%;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+}
+.clientes .carousel-control.right, .clientes .carousel-control.left {
+  color: #0875b8;
+  text-shadow: none;
+  width:3%;
+}
+.clientes .carousel-control.left{
+  left: 0;
+  top: 5%;
+}
+.clientes .carousel-control.right{
+  right: 0;
+  top: 5%;
+}
+.clientes .flecha {
+  width: 22px;
+  height: 38px;
+  display: block;
+  margin-top: 10vh;
+}
+.clientes .flecha.izq {
+  background: url("../img/arrow_left.png") no-repeat;
+  float: right;
+}
+
+.clientes .flecha.der {
+  background: url("../img/arrow_right.png") no-repeat;
+  float: right;
+}
+.clientes .client-logo {
+  height: 132px;
+  width: 492px;
+  margin: 0 auto;
+
+  img{
+    width: 100%;
+    position: relative;
+    top: 50px;
+    left: 0;
+  }
+}
+/*---------- EQUIPO ----------*/
+.carousel.team {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  //margin-top: 0;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+  min-height: 25vh;
+  //padding-bottom: 250px;
+  height:800px;
+}
+.carousel.team .carousel-caption {
+  z-index: 2;
+  top: 5px;
+}
+.carousel.team .carousel-inner{
+  padding-bottom: 200px;
+  height: 800px;
+}
+.team .carousel-indicators {
+  display: block;
+  position: relative;
+  margin: auto;
+  top: -360px;
+  left: 0;
+  margin-bottom: 0;
+  height: 20px;
+}
+.team .carousel-indicators li{
+  width:15px;
+  height: 15px;
+  margin: 0 3px;
+  background-color: #a7a7a7;
+  border:none;
+}
+.team .carousel-indicators .active {
+  width:15px;
+  height: 15px;
+  margin: 0 3px;
+  background-color: #FFF;
+  border:none;
+}
+.team .carousel-control.left{
+  left: 0;
+  top: 0;
+}
+.team .carousel-control.right{
+  right: 0;
+  top: 0;
+}
+.team .flecha{
+  width: 68px;
+  height: 134px;
+  display: block;
+}
+.team .flecha{
+  margin-top: 125px;
+}
+.team .flecha.izq {
+  background: url("../img/arrow_left_team.png") no-repeat;
+  float: right;
+}
+
+.team .flecha.der {
+  background: url("../img/arrow_right_team.png") no-repeat;
+  float: left;
+}
+
+
